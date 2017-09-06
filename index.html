@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>vue js </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/vue">
+    </script>
+  </head>
+  <body>
+  
+<div id="vue-app">
+    
+      <!-- bag image -->
+    <div id="bag" v-bind:class="{bust:ended}">
+      
+    </div>
+    <!-- bag health -->
+    <div id="bag-health">
+      <div v-bind:style="{width:health +'%' }"></div>
+    </div>
+    <!-- bag controlls -->
+    <div id="controlls">
+      <button v-on:click="punch" v-show="!ended">Punch</button>
+      <button v-on:click="restart" >Restart</button>
+    </div>
+  </div>
+  
+<script src="app.js"></script>
+  </body>
+</html>
